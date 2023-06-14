@@ -1,6 +1,7 @@
 import os
 import streamlit as st
 import openai
+import pyperclip
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -44,3 +45,5 @@ if st.button("Send"):
 
     # Display the assistant's message
     st.write(f"AI: {assistant_message}")
+    pyperclip.copy(assistant_message)
+    st.write("Response copied to clipboard!")
