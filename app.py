@@ -45,5 +45,3 @@ if st.button("Send"):
 
     # Display the assistant's message
     st.write(f"AI: {assistant_message}")
-    pyperclip.copy(assistant_message)
-    st.write("Response copied to clipboard!")
