@@ -12,6 +12,8 @@ key = os.getenv('API_KEY')
 # Set the OpenAI API key
 openai.api_key = key
 
+st.set_page_config(page_title="Website ni Gibson Marshall Diwa")
+
 # Create a Streamlit interface
 st.title("Chat with AI")
 
